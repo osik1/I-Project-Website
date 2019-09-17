@@ -1,0 +1,20 @@
+/*===============================================
+    User Detail submission form loader
+================================================*/
+
+.loader {
+    display: inline-block;
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #1E1E1E;
+    border-bottom: 2px solid #1E1E1E;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 0.001s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 

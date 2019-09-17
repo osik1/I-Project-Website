@@ -9,9 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Oswald|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Leghttps://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <title>Iproject-Leg</title>
     <link rel="icon" type="image/icon" href="iprojectlogo.png" />
     <script type="text/javascript" src="homepage.js" async></script>
+    <title>Iproject-Leg</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/success_message.css">
+    <script type="text/javascript" src="js/addUserToGsheet.js" async></script>
+
 
 </head>
 <body>
@@ -182,24 +187,24 @@
 							 </div>    
 					</div>
 					<div class="footer-section-Five">
-										<div class="footer-heading"><h3>Join Our Mailing List</h3></div>
-										<div class="footer-form">
-										<form>
-											<div class="footer-form-box">
-											<input type="text" class="footer-form-style" placeholder="Name">
-											</div>
-											<div class="footer-form-box">
-											<input type="text" class="footer-form-style" placeholder="Email">
-											</div>
-											
-											<div class="footer-form-box">
-											<input type="submit" class="footer-form-submit-style" value="SUBMIT">
-											</div>
-										</form>
-										</div>
-				
-										
-				
+                        <div class="footer-heading"><h3>Join Our Mailing List</h3></div>
+                        <div class="footer-form">
+                        <form id="userDetailForm" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+                            <div class="footer-form-box">
+                                <input id="username" name="entry.1641757221" class="footer-form-style" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="footer-form-box">
+                                <input id="email" name="entry.214500059" class="footer-form-style" placeholder="Email" type="email" required> 
+                            </div>
+                            
+                            <div class="footer-form-box">
+                                <input id="send" type="submit" class="footer-form-submit-style" value="SUBMIT">
+                                <span id="success_message" style="color: #367855;">Sending successful</span>
+                                <span id="spinner" class="spinner"></span>
+                            </div>
+
+                        </form>
+                        </div>		
 					</div> 
 					
 			  
