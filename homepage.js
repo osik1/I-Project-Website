@@ -1,4 +1,3 @@
-
 var slideIndex = 1;
 
 var myTimer;
@@ -7,8 +6,6 @@ window.addEventListener("load",function() {
     showSlides(slideIndex);
     myTimer = setInterval(function(){plusSlides(1)}, 2000);
 })
-
-
 
 // NEXT AND PREVIOUS CONTROL
 function plusSlides(n){
@@ -47,3 +44,4 @@ function showSlides(n){
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+

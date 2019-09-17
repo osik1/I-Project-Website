@@ -88,16 +88,16 @@ nav a:hover {
 
 
 
-input[type=text]{
-	      padding:7px;
-				border:none;
-				font-size:16px;
-				font-family:Arial;   
-	     }
+input[type=text], input[type=email]#email{
+    padding:7px;
+    border:none;
+    font-size:16px;
+    font-family:Arial;   
+}
 
 button{
 	   float:right;
-	   color:#000
+	   color:#000;
 	   border-radius:2 5px 5px 2;
 	   cursor:pointer;
 	   position:relative;
